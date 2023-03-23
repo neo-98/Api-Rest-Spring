@@ -12,8 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200",  maxAge = 3600)
 @RequestMapping ("/api/persona/") //--> ruta para acceder
-@CrossOrigin(origins = "http://localhost:4200")
 public class PersonaREST {
 
     @Autowired // le dice al programa que existe una entidad, un r
